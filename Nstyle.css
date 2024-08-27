@@ -24,18 +24,18 @@ body{
     background-color: black;
 }
 nav{
-    max-width: 70vw;
+    max-width: 60vw;
     justify-content: space-between;
-    margin: auto;
+    padding: 16px 0;
     display: flex;
     align-items: center;
-    height: 62px;
+    height: 100px;
 
 }
 
 nav image{
     color: red;
-    width: 114px;
+    width: 130px;
     position: relative;
     z-index: 10;
 }
@@ -47,7 +47,7 @@ nav button{
 
 .hero{
     font-family: 'Martel Sans', sans-serif;
-    height:calc(100% - 62px);
+    height:calc(100% - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,6 +78,8 @@ nav button{
  .seperation{
     height: 7px;
     background-color: rgb(65, 61, 61);
+    position: relative;
+    z-index: 20;
  }
 
  .btn{
@@ -193,17 +195,33 @@ section.first > div :nth-child(2){
     cursor: pointer;
 }
 
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px; 
+}
+
+.footer a{
+    font-size: 14px;
+    color: white;
+}
+
 .footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
-    max-width: 60vw;
-    margin: auto;
+}
+
+footer .questions{
+    padding: 34px 0;
+
 }
  
 .footer-item{
     display: flex;
     flex-direction: column;
+    gap: 23px;
 
 }
 
