@@ -59,7 +59,7 @@ nav button{
 }
 
 .hero> :nth-child(1){
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight:bolder ;
     font-size: 48px;
     text-align: center;
@@ -133,12 +133,14 @@ nav button{
     justify-content: center;
     align-items: center;
 }
+
+
 .secImage{
     position: relative;
 }
 
 .secImage img{
-   width: 30vw; 
+   width: 555px; 
    position: relative;
    z-index: 10;
 }
@@ -147,11 +149,13 @@ nav button{
     position: absolute;
     top:51px;
     right: 0;
+    width: 401px;
 }
 
 section.first > div{
     display: flex;
     flex-direction: column;
+    padding: 34px 0;
 }
 
 
@@ -202,9 +206,9 @@ footer{
     padding: 14px; 
 }
 
-.footer a{
-    font-size: 14px;
-    color: white;
+footer .questions{
+    padding: 34px 0;
+
 }
 
 .footer{
@@ -213,10 +217,55 @@ footer{
     color: white;
 }
 
-footer .questions{
-    padding: 34px 0;
+@media screen and (max-width: 1300px) {
 
+    nav{
+        max-width: 90vw;
+    }
+
+    .first{
+        flex-wrap: wrap;
+    }  
+
+    .secImage img{
+        width: 305px; 
+        position: relative;
+        z-index: 10;
+     }
+
+     .secImage video{
+        width: 305px;  
+    }
+
+    .hero> :nth-child(1){
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2){
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3){
+        font-size: 18px;
+    }
+
+} 
+
+@media screen and (max-width: 1300px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        gap: 25px;
+    }
+     
+} 
+
+.footer a{
+    font-size: 14px;
+    color: white;
 }
+
  
 .footer-item{
     display: flex;
