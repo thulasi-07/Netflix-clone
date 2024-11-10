@@ -18,9 +18,9 @@ body {
   position: relative;
 }
 .main .box {
-  height: 644px;
+  height: 80vh;
   width: 100%;
-  opacity: 0.69;
+  opacity: 0.44;
   position: absolute;
   top: 0;
   background-color: black;
